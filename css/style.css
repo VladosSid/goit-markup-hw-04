@@ -132,8 +132,16 @@ p {
 }
 
 /* Контакты */
+
+/* .icon-mail,
+.icon-tell {
+    fill: var(--secondary-text-color);
+} */
+
 .contacts .contacts-company {
     color: var(--secondary-text-color);    
+    display: flex;
+    align-items: center;
 }
 
 .contacts-company {  
@@ -145,8 +153,8 @@ p {
 .contact-in-footer:hover,
 .contact-in-footer:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
-
 /* Тело главной страницы */
 /* Превью с заголовком */
 .primery {
@@ -209,6 +217,19 @@ p {
 /* Особенности */
 .feature {
     margin-bottom: 94px;
+}
+/* Скрывает заголовок которого нету в макете */
+.text-delete {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .container .feature-list {
