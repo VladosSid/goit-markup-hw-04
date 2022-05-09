@@ -133,20 +133,19 @@ p {
 
 /* Контакты */
 
-/* .icon-mail,
-.icon-tell {
-    fill: var(--secondary-text-color);
-} */
+
 
 .contacts .contacts-company {
     color: var(--secondary-text-color);    
     display: flex;
     align-items: center;
-}
-
-.contacts-company {  
     text-decoration: none;
 }
+
+/* .icon-mail,
+.icon-tell {
+    fill: var(--secondary-text-color);
+} */
 
 .contacts .contacts-company:hover,
 .contacts .contacts-company:focus,
@@ -215,9 +214,6 @@ p {
 }
 
 /* Особенности */
-.feature {
-    margin-bottom: 94px;
-}
 /* Скрывает заголовок которого нету в макете */
 .text-delete {
     position: absolute;
@@ -230,6 +226,20 @@ p {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.faeture-container-icon {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+
+    background-color:var(--font-color-filter) ;
+    
+}
+
+.feature {
+    margin-bottom: 94px;
 }
 
 .container .feature-list {
