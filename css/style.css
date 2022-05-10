@@ -142,17 +142,16 @@ p {
     text-decoration: none;
 }
 
-/* .icon-mail,
+.icon-mail,
 .icon-tell {
-    fill: var(--secondary-text-color);
-} */
+    fill: currentColor;
+}
 
 .contacts .contacts-company:hover,
 .contacts .contacts-company:focus,
 .contact-in-footer:hover,
 .contact-in-footer:focus {
     color: var(--accent-color);
-    fill: var(--accent-color);
 }
 /* Тело главной страницы */
 /* Превью с заголовком */
@@ -235,7 +234,6 @@ p {
     padding: 25px 100px;
 
     background-color:var(--font-color-filter) ;
-    
 }
 
 .feature {
@@ -301,7 +299,7 @@ p {
 
 .team-list .container-team {
     width: 270px;
-    height: 368px;
+    padding-bottom: 30px;
 
     background-color: var(--color-white-text);
 }
@@ -337,7 +335,7 @@ p {
 }
 
 .team-list .profesion {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 
     color: var(--secondary-text-color);
     
@@ -345,6 +343,36 @@ p {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
+}
+
+.social-network-list {
+    display: flex;
+    width: 206px;
+    margin-right: 32px;
+    margin-left: 32px;
+    justify-content: space-between;
+}
+
+.social-network {
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+}
+
+.social-network:hover,
+.social-network:focus,
+.social-network:hover .icon-team,
+.social-network:focus .icon-team {
+    background-color: var(--accent-color);
+    fill: var(--color-white-text);
+}
+
+.icon-team {
+    fill: #AFB1B8;
 }
 
 /* Футер */
