@@ -4,7 +4,9 @@
 цвет лого #000000
 Акцент  #2196F3
  цвет контактов rgba(255, 255, 255, 0.6)
- фон цвета фильтра #F5F4FA*/
+ фон цвета фильтра #F5F4FA
+ цвет рамок и иконок #AFB1B8*/
+ 
 
  :root {
     --primary-text-color: #212121;
@@ -14,6 +16,7 @@
     --accent-color: #2196F3;
     --font-color-filter: #F5F4FA;
     --contact-in-footer: rgba(255, 255, 255, 0.6);
+    --icon-border: #AFB1B8;
 }
 
 
@@ -51,7 +54,7 @@ p {
     margin: 0px auto;
     padding-right: 15px;
     padding-left: 15px;
-    /* outline: 2px dashed red; */
+    outline: 2px dashed red;
 }
 /* сброс отсутпов и точек в списках */
 .padding-list {
@@ -195,7 +198,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     padding: 10px 32px;
-    border: 1px solid #2196F3;
+    border: 1px solid var(--accent-color);
     border-radius: 4px;
 
     color: var(--color-white-text);
@@ -289,8 +292,9 @@ p {
 /* Наша команда */
 .team {
     padding: 94px 0px;
+    margin-bottom: 94px;
 
-    background-color: #F5F4FA;
+    background-color: var(--font-color-filter);
 }
 
 .container .team-title {
@@ -372,7 +376,27 @@ p {
 }
 
 .icon-team {
-    fill: #AFB1B8;
+    fill: var(--icon-border);
+}
+
+/* Постонянные клиенты */
+.clients {
+    margin-bottom: 94px;
+}
+
+.clients .clients-title {
+    margin-bottom: 50px;
+}
+
+.clients .clients-list {
+    display: flex;
+}
+
+.clients-item .clients-block-compani {
+    width: 92px;
+
+    border: 1px solid var(--icon-border);
+    border-radius: 4px;
 }
 
 /* Футер */
