@@ -428,6 +428,10 @@ p {
 
 /* Футер */
 /* Фон временный, что было видно текст */
+.fotter-block {
+    display: flex;
+}
+
 .section-footer {
     padding: 60px 0px;
 
@@ -438,20 +442,77 @@ p {
     display: inline-block;
     margin-bottom: 20px;
     margin-right: 0;
-
+    
     color: var(--color-white-text);
+    margin-right: 156px;
 }
 
 .locatyon {
     margin-bottom: 9px;
     color: var(--color-white-text);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
 }
+
 /* Контакты в подвале */
 .contact-in-footer {
     display: block;
     color: var(--contact-in-footer);
     text-decoration: none; 
     font-style: normal;   
+}
+
+/* Соцсети в подвале */
+.social-media-footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+}
+
+.titel-footer {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: var(--color-white-text);
+    text-align: left;
+}
+
+.social-network-footer {
+    display: flex;
+    width: 206px;
+    margin-right: 32px;
+    margin-left: 0;
+    justify-content: space-between;
+}
+
+.social-network-list-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-network-list-footer:hover,
+.social-network-list-footer:focus,
+.social-network-list-footer:hover .icon-team,
+.social-network-list-footerfocus .icon-team {
+    background-color: var(--accent-color);
+    fill: var(--color-white-text);
+}
+
+.icon-footer {
+    fill: var(--color-white-text);
 }
 
 .contact-in-footer.mail {
