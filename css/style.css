@@ -360,7 +360,7 @@ p {
 .social-network {
     display: flex;
     justify-content: center;
-    align-items:center ;
+    align-items: center;
     width: 44px;
     height: 44px;
     border: none;
@@ -392,11 +392,38 @@ p {
     display: flex;
 }
 
-.clients-item .clients-block-compani {
-    width: 92px;
-
+.clients-list .clients-item {
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    
     border: 1px solid var(--icon-border);
     border-radius: 4px;
+}
+
+.clients-list .clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-list .clients-item:hover,
+.clients-list .clients-item:focus,
+.clients-list .clients-item:hover .icon-clients,
+.clients-list .clients-item:focus .icon-clients {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+}
+
+.clients-item .client-logo-container {
+    display: flex;
+    width: 106px;
+    height: 60px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-clients {
+    fill: rgba(175, 177, 184, 1);
 }
 
 /* Футер */
