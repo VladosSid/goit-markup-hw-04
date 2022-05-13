@@ -6,9 +6,9 @@
  цвет контактов rgba(255, 255, 255, 0.6)
  фон цвета фильтра #F5F4FA
  цвет рамок и иконок #AFB1B8*/
- 
 
- :root {
+
+:root {
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
     --color-white-text: #FFFFFF;
@@ -25,10 +25,11 @@
 body {
     background-color: var(--color-white-text);
     color: var(--primary-text-color);
-    
+
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
 }
+
 h2 {
     font-weight: 700;
     font-size: 36px;
@@ -36,13 +37,13 @@ h2 {
     text-align: center;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6, 
-ul, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
 li,
 p {
     margin-top: 0;
@@ -56,6 +57,7 @@ p {
     padding-left: 15px;
     outline: 2px dashed red;
 }
+
 /* сброс отсутпов и точек в списках */
 .padding-list {
     padding-left: 0;
@@ -83,7 +85,7 @@ p {
     margin-right: 93px;
 
     color: var(--logo-color);
-    
+
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -96,8 +98,9 @@ p {
 }
 
 .logo .accent-logo {
-    color: var(--accent-color);    
+    color: var(--accent-color);
 }
+
 /* Меню */
 .container .menu,
 .container .contacts {
@@ -128,7 +131,7 @@ p {
 .menu .link:hover,
 .menu .link:focus {
     color: var(--accent-color);
-} 
+}
 
 .menu .link.carrent {
     color: var(--accent-color);
@@ -139,7 +142,7 @@ p {
 
 
 .contacts .contacts-company {
-    color: var(--secondary-text-color);    
+    color: var(--secondary-text-color);
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -156,6 +159,7 @@ p {
 .contact-in-footer:focus {
     color: var(--accent-color);
 }
+
 /* Тело главной страницы */
 /* Превью с заголовком */
 .primery {
@@ -166,9 +170,8 @@ p {
     margin-right: auto;
     padding: 200px 0;
 
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4), 
-        rgba(47, 48, 58, 0.4)),
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
         url(../images/bgi-header.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -187,7 +190,7 @@ p {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    text-align: center;  
+    text-align: center;
 }
 
 .primery-text .slogan {
@@ -202,8 +205,8 @@ p {
     border-radius: 4px;
 
     color: var(--color-white-text);
-    background-color: var(--accent-color);    
-    
+    background-color: var(--accent-color);
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -211,7 +214,7 @@ p {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    
+
     cursor: pointer;
 }
 
@@ -236,7 +239,7 @@ p {
     margin-bottom: 30px;
     padding: 25px 100px;
 
-    background-color:var(--font-color-filter) ;
+    background-color: var(--font-color-filter);
 }
 
 .feature {
@@ -256,9 +259,9 @@ p {
     text-transform: uppercase;
 }
 
-.feature-list .feature-text { 
-    color: var(--secondary-text-color); 
-    
+.feature-list .feature-text {
+    color: var(--secondary-text-color);
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -313,10 +316,10 @@ p {
 }
 
 .team-list .team-item {
-    box-shadow: 
-    0px 1px 3px rgba(0, 0, 0, 0.12), 
-    0px 1px 1px rgba(0, 0, 0, 0.14), 
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow:
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -325,8 +328,8 @@ p {
 }
 
 .container-team .photo-team {
-    margin-bottom: 30px;     
- }
+    margin-bottom: 30px;
+}
 
 .container-team .team-name {
     margin-bottom: 10px;
@@ -342,7 +345,7 @@ p {
     margin-bottom: 16px;
 
     color: var(--secondary-text-color);
-    
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
@@ -396,7 +399,7 @@ p {
     width: 170px;
     height: 92px;
     padding: 16px 32px;
-    
+
     border: 1px solid var(--icon-border);
     border-radius: 4px;
 }
@@ -442,7 +445,7 @@ p {
     display: inline-block;
     margin-bottom: 20px;
     margin-right: 0;
-    
+
     color: var(--color-white-text);
     margin-right: 156px;
 }
@@ -461,8 +464,8 @@ p {
 .contact-in-footer {
     display: block;
     color: var(--contact-in-footer);
-    text-decoration: none; 
-    font-style: normal;   
+    text-decoration: none;
+    font-style: normal;
 }
 
 /* Соцсети в подвале */
@@ -590,9 +593,9 @@ p {
 
 .project-list .project-container:hover,
 .project-list .project-container:focus {
-    box-shadow: 
-    1px 4px 6px rgba(0, 0, 0, 16%),
-    0px 0px 4px rgba(0, 0, 0, 6%);
+    box-shadow:
+        1px 4px 6px rgba(0, 0, 0, 16%),
+        0px 0px 4px rgba(0, 0, 0, 6%);
 }
 
 .img-portfolio {
@@ -610,7 +613,7 @@ p {
 
 .project-list .name-project {
     color: var(--primary-text-color);
-    
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
