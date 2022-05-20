@@ -3,9 +3,9 @@
 белый цвет #FFFFFF
 цвет лого #000000
 Акцент  #2196F3
- цвет контактов rgba(255, 255, 255, 0.6)
- цвет рамок и иконок #AFB1B8
- фон цвета фильтра #F5F4FA*/
+цвет контактов rgba(255, 255, 255, 0.6)
+цвет рамок и иконок #AFB1B8
+фон цвета фильтра #F5F4FA*/
 
 :root {
   --primary-text-color: #212121;
@@ -55,7 +55,13 @@ p {
   margin: 0px auto;
   padding-right: 15px;
   padding-left: 15px;
-  outline: 2px dashed red;
+  /* outline: 2px dashed red; */
+}
+
+/* ГЛОБАЛЬНЫЕ ПАДИНГИ ДЛЯ СЕКЦИЙ */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* сброс отсутпов и точек в списках */
@@ -77,31 +83,22 @@ p {
   overflow: hidden;
 }
 
-/* ГЛОБАЛЬНЫЕ ПАДИНГИ ДЛЯ СЕКЦИЙ */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 /* глобальные параметры картинок */
 img {
   display: block;
   max-width: 100%;
 }
 
-/* Шапка сайта */
-/* Логотип */
+/* ------ Шапка сайта ------ */
+/* ------ Логотип ------ */
 .section-header {
-  border-bottom: 1px solid #757575;
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
 .container-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
 }
 
 .container .nav {
@@ -129,7 +126,7 @@ img {
   color: var(--accent-color);
 }
 
-/* Меню */
+/* ------ Меню ------ */
 .container .menu,
 .container .contacts {
   display: flex;
@@ -355,25 +352,26 @@ img {
 
 .social-network-list {
   display: flex;
-  margin-right: -10px;
+  /* margin-right: -10px; */
 }
 
-.social-network {
-  flex-basis: calc(100% / 4 - 10px);
+.social-network-list .social-network:not(:last-child) {
   margin-right: 10px;
+}
+
+.socials-more {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
-  border: none;
   border-radius: 50%;
 }
 
-.social-network:hover,
-.social-network:focus,
-.social-network:hover .icon-team,
-.social-network:focus .icon-team {
+.socials-more:hover,
+.socials-more:focus,
+.socials-more:hover .icon-team,
+.socials-more:focus .icon-team {
   background-color: var(--accent-color);
   fill: var(--color-white-text);
 }
@@ -391,30 +389,27 @@ img {
 .clients-list .clients-item {
   flex-basis: calc(100% / 6 - var(--card-set-ga));
   margin-right: var(--card-set-gap);
-
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
-
-  border: 1px solid var(--icon-border);
-  border-radius: 4px;
 }
 
-.clients-list .clients-item:hover,
-.clients-list .clients-item:focus,
-.clients-list .clients-item:hover .icon-clients,
-.clients-list .clients-item:focus .icon-clients {
+.clients-item .client-logo-container:hover,
+.clients-item .client-logo-container:focus,
+.clients-item .client-logo-container:hover .icon-clients,
+.clients-item .client-logo-container:focus .icon-clients {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
 
 .clients-item .client-logo-container {
   display: flex;
-  width: 106px;
-  height: 60px;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
 
   justify-content: center;
   align-items: center;
+
+  border: 1px solid var(--icon-border);
+  border-radius: 4px;
 }
 
 .icon-clients {
@@ -481,12 +476,13 @@ img {
 
 .social-network-footer {
   display: flex;
-  margin-right: -10px;
 }
 
-.social-network-list-footer {
-  flex-basis: calc(100% / 4 - 10px);
+.social-network-list-footer:not(:last-child) {
   margin-right: 10px;
+}
+
+.socials-mpre-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -499,10 +495,10 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-network-list-footer:hover,
-.social-network-list-footer:focus,
-.social-network-list-footer:hover .icon-team,
-.social-network-list-footerfocus .icon-team {
+.socials-mpre-footer:hover,
+.socials-mpre-footer:focus,
+.socials-mpre-footer:hover .icon-team,
+.socials-mpre-footer:focus .icon-team {
   background-color: var(--accent-color);
   fill: var(--color-white-text);
 }
@@ -577,8 +573,8 @@ img {
   margin-bottom: var(--card-set-gap);
 }
 
-.project-list .project-container:hover,
-.project-list .project-container:focus {
+.project-container .project-linck:hover,
+.project-container .project-linck:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 16%), 0px 0px 4px rgba(0, 0, 0, 6%);
 }
 
